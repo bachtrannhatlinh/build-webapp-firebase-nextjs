@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { AuthProvider } from "@/contexts/AuthContext";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -9,12 +10,14 @@ export const metadata: Metadata = {
     default: "BlogApp - Modern Blog Platform",
     template: "%s | BlogApp",
   },
-  description: "A modern blog platform built with Next.js, Firebase, and Tailwind CSS",
+  description:
+    "A modern blog platform built with Next.js, Firebase, and Tailwind CSS",
   keywords: ["blog", "nextjs", "firebase", "react", "typescript"],
   authors: [{ name: "Your Name" }],
   openGraph: {
     title: "BlogApp - Modern Blog Platform",
-    description: "A modern blog platform built with Next.js, Firebase, and Tailwind CSS",
+    description:
+      "A modern blog platform built with Next.js, Firebase, and Tailwind CSS",
     type: "website",
   },
 };
@@ -30,7 +33,7 @@ export default function RootLayout({
         className={`${inter.className} antialiased`}
         suppressHydrationWarning
       >
-        {children}
+        <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
   );

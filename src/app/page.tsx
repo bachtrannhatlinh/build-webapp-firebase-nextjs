@@ -63,7 +63,6 @@ export default function Home() {
   }, []);
 
   const openEditForm = useCallback((blog: Blog) => {
-    console.log("Editing blog:", blog);
     setEditingBlog(blog);
     setFormOpen(true);
   }, []);
