@@ -213,7 +213,7 @@ export function LoginForm({
 
       {/* Switch to Register */}
       <p className="text-center text-sm text-slate-500 dark:text-slate-400">
-        Don't have an account?{" "}
+        Don&apos;t have an account?{" "}
         <button
           type="button"
           onClick={onSwitchToRegister}

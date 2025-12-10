@@ -54,7 +54,7 @@ export function ForgotPasswordForm({ onBack }: ForgotPasswordFormProps) {
             Check your email
           </h2>
           <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
-            We've sent a password reset link to{" "}
+            We&apos;ve sent a password reset link to{" "}
             <span className="font-medium text-slate-700 dark:text-slate-300">
               {email}
             </span>
@@ -94,7 +94,7 @@ export function ForgotPasswordForm({ onBack }: ForgotPasswordFormProps) {
           Forgot password?
         </h1>
         <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
-          No worries, we'll send you reset instructions
+          No worries, we&apos;ll send you reset instructions
         </p>
       </div>
 
