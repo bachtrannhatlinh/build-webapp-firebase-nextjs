@@ -3,8 +3,20 @@
  * Dùng để gọi các Cloud Functions từ frontend
  */
 
+import { getFunctions, connectFunctionsEmulator } from "firebase/functions";
+import app from "./firebase";
+
 const FUNCTIONS_BASE_URL = process.env.NEXT_PUBLIC_FUNCTIONS_URL || 
   `https://asia-southeast1-${process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID}.cloudfunctions.net`;
+
+// Initialize Firebase Functions
+export const functions = getFunctions(app, "asia-southeast1");
+
+// Connect to emulator in development
+if (typeof window !== "undefined" && process.env.NODE_ENV === "development") {
+  // Uncomment the line below to use Functions emulator
+  // connectFunctionsEmulator(functions, "localhost", 5001);
+}
 
 interface ApiResponse<T> {
   data?: T;
@@ -82,6 +94,25 @@ export const functionsApi = {
     delete: (id: string) =>
       callFunction<{ message: string }>(`blogs?id=${id}`, {
         method: "DELETE",
+      }),
+  },
+
+  // Notifications API
+  notifications: {
+    getByUser: (userId: string, limit = 50) =>
+      callFunction<{ notifications: unknown[] }>(`notificationsApi?userId=${userId}&limit=${limit}`),
+    
+    send: (data: {
+      userId?: string;
+      userIds?: string[];
+      title: string;
+      body: string;
+      type?: "info" | "success" | "warning" | "error";
+      data?: Record<string, string>;
+    }) =>
+      callFunction<{ success: boolean; results: unknown[] }>("notificationsApi", {
+        method: "POST",
+        body: JSON.stringify(data),
       }),
   },
 };

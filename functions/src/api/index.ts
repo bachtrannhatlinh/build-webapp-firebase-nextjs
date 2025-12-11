@@ -157,3 +157,6 @@ export const health = onRequest(
     });
   }
 );
+
+// Notifications API
+export * from "./notifications";

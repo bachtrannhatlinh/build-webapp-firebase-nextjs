@@ -83,7 +83,10 @@ export function Header({ onCreateClick }: HeaderProps) {
                 <DropdownMenuTrigger asChild>
                   <button className="flex items-center gap-2 rounded-full p-1 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
                     <Avatar className="h-9 w-9 border-2 border-slate-200 dark:border-slate-700">
-                      <AvatarImage src={user.photoURL || ""} alt={user.displayName || ""} />
+                      <AvatarImage
+                        src={user.photoURL || ""}
+                        alt={user.displayName || ""}
+                      />
                       <AvatarFallback className="bg-gradient-to-br from-blue-500 to-purple-500 text-white text-sm">
                         {getInitials(user.displayName)}
                       </AvatarFallback>
@@ -93,7 +96,9 @@ export function Header({ onCreateClick }: HeaderProps) {
                 <DropdownMenuContent align="end" className="w-56">
                   <DropdownMenuLabel>
                     <div className="flex flex-col space-y-1">
-                      <p className="text-sm font-medium">{user.displayName || "User"}</p>
+                      <p className="text-sm font-medium">
+                        {user.displayName || "User"}
+                      </p>
                       <p className="text-xs text-slate-500 truncate">
                         {user.email || user.phoneNumber}
                       </p>
