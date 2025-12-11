@@ -1,4 +1,15 @@
 {
+  "hosting": {
+    "source": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "frameworksBackend": {
+      "region": "us-central1"
+    }
+  },
   "functions": [
     {
       "source": "functions",
@@ -23,6 +34,9 @@
     "rules": "storage.rules"
   },
   "emulators": {
+    "hosting": {
+      "port": 5002
+    },
     "functions": {
       "port": 5001
     },
