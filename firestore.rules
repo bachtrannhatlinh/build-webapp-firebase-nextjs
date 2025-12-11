@@ -1,0 +1,105 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Users collection - cho phép read không cần auth để tránh lỗi permission
+    match /users/{userId} {
+      allow read: if true;
+      allow create: if request.auth != null;
+      allow update, delete: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Profiles collection
+    match /profiles/{userId} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Blogs collection
+    match /blogs/{blogId} {
+      allow read: if true;
+      allow create: if request.auth != null;
+      allow update, delete: if request.auth != null && 
+        request.auth.uid == resource.data.authorId;
+    }
+    
+    // Chat rooms
+    match /chatRooms/{chatId} {
+      allow read, write: if true;
+    }
+    
+    // Messages
+    match /messages/{messageId} {
+      allow read, write: if true;
+    }
+    
+    // Notifications
+    match /notifications/{notificationId} {
+      allow read, write: if true;
+    }
+    
+    // Chats collection
+    match /chats/{chatId} {
+      allow read, write: if request.auth != null;
+      
+      match /messages/{messageId} {
+        allow read, write: if request.auth != null;
+      }
+    }
+    
+    // Comments collection
+    match /comments/{commentId} {
+      allow read: if true;
+      allow create: if request.auth != null;
+      allow update, delete: if request.auth != null && 
+        request.auth.uid == resource.data.authorId;
+    }
+    
+    // Stats & Reports (read-only for authenticated users)
+    match /stats/{document=**} {
+      allow read: if request.auth != null;
+      allow write: if false;
+    }
+    
+    match /reports/{document=**} {
+      allow read: if request.auth != null;
+      allow write: if false;
+    }
+    
+    // Webhook logs (admin only - Cloud Functions can write)
+    match /webhookLogs/{document=**} {
+      allow read, write: if false;
+    }
+    
+    // Activity logs
+    match /activityLogs/{document=**} {
+      allow read: if request.auth != null;
+      allow write: if false;
+    }
+    
+    // Counters (internal use)
+    match /_counters/{document=**} {
+      allow read: if true;
+      allow write: if false;
+    }
+    
+    // Health check (internal use)
+    match /_health/{document=**} {
+      allow read, write: if false;
+    }
+    
+    // Sessions
+    match /sessions/{sessionId} {
+      allow read, write: if request.auth != null && 
+        request.auth.uid == resource.data.userId;
+    }
+    
+    // Payments
+    match /payments/{paymentId} {
+      allow read: if request.auth != null && 
+        request.auth.uid == resource.data.userId;
+      allow write: if false;
+    }
+  }
+}

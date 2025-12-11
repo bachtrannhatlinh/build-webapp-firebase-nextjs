@@ -1,0 +1,250 @@
+[debug] [2025-12-11T10:56:40.234Z] ----------------------------------------------------------------------
+[debug] [2025-12-11T10:56:40.237Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\OS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2025-12-11T10:56:40.237Z] CLI Version:   15.0.0
+[debug] [2025-12-11T10:56:40.237Z] Platform:      win32
+[debug] [2025-12-11T10:56:40.237Z] Node Version:  v22.21.1
+[debug] [2025-12-11T10:56:40.237Z] Time:          Thu Dec 11 2025 17:56:40 GMT+0700 (Indochina Time)
+[debug] [2025-12-11T10:56:40.237Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-12-11T10:56:41.064Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-12-11T10:56:41.064Z] > authorizing via signed-in user (bachlinh01011997f@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2025-12-11T10:56:41.076Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-12-11T10:56:41.076Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-12-11T10:56:41.079Z] Emulator locator file path: C:\Users\OS\AppData\Local\Temp\hub-fir-app-1-b679f.json
+[debug] [2025-12-11T10:56:41.080Z] [hub] writing locator at C:\Users\OS\AppData\Local\Temp\hub-fir-app-1-b679f.json
+[debug] [2025-12-11T10:56:41.090Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-12-11T10:56:41.090Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-12-11T10:56:41.090Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-12-11T10:56:41.090Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2025-12-11T10:56:41.141Z] defaultcredentials: writing to file C:\Users\OS\AppData\Roaming\firebase\bachlinh01011997f_gmail_com_application_default_credentials.json
+[debug] [2025-12-11T10:56:41.143Z] Setting GAC to C:\Users\OS\AppData\Roaming\firebase\bachlinh01011997f_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\OS\\AppData\\Roaming\\firebase\\bachlinh01011997f_gmail_com_application_default_credentials.json"}}
+[debug] [2025-12-11T10:56:41.144Z] Checked if tokens are valid: true, expires at: 1765453704016
+[debug] [2025-12-11T10:56:41.144Z] Checked if tokens are valid: true, expires at: 1765453704016
+[debug] [2025-12-11T10:56:41.145Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-app-1-b679f/adminSdkConfig [none]
+[debug] [2025-12-11T10:56:42.348Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-app-1-b679f/adminSdkConfig 200
+[debug] [2025-12-11T10:56:42.348Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-app-1-b679f/adminSdkConfig {"projectId":"fir-app-1-b679f","storageBucket":"fir-app-1-b679f.firebasestorage.app"}
+[info] i  ui: downloading ui-v1.15.0.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.15.0.zip..."}}
+[debug] [2025-12-11T10:56:42.379Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip 
+[debug] [2025-12-11T10:56:42.676Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip 200
+[debug] [2025-12-11T10:56:42.676Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip [stream]
+[debug] [2025-12-11T10:56:43.224Z] Data is 3538469
+[debug] [2025-12-11T10:56:43.224Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-12-11T10:56:43.224Z] [unzip] Processing entry: client\
+[debug] [2025-12-11T10:56:43.224Z] [unzip] mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\
+[debug] [2025-12-11T10:56:43.225Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=293 bytes, uncompressed_size=293 bytes)
+[debug] [2025-12-11T10:56:43.225Z] [unzip] Processing entry: client\favicon-16x16.png
+[debug] [2025-12-11T10:56:43.225Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-12-11T10:56:43.226Z] [unzip] Writing file: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\favicon-16x16.png
+[debug] [2025-12-11T10:56:43.227Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=1433 bytes, uncompressed_size=2611 bytes)
+[debug] [2025-12-11T10:56:43.227Z] [unzip] Processing entry: client\safari-pinned-tab.svg
+[debug] [2025-12-11T10:56:43.227Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-12-11T10:56:43.227Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\safari-pinned-tab.svg
+[debug] [2025-12-11T10:56:43.230Z] [unzip] Entry: client/favicon.ico (compressed_size=2933 bytes, uncompressed_size=13294 bytes)
+[debug] [2025-12-11T10:56:43.230Z] [unzip] Processing entry: client\favicon.ico
+[debug] [2025-12-11T10:56:43.230Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-12-11T10:56:43.230Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\favicon.ico
+[debug] [2025-12-11T10:56:43.232Z] [unzip] Entry: client/index.html (compressed_size=1364 bytes, uncompressed_size=3071 bytes)
+[debug] [2025-12-11T10:56:43.232Z] [unzip] Processing entry: client\index.html
+[debug] [2025-12-11T10:56:43.232Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-12-11T10:56:43.232Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\index.html
+[debug] [2025-12-11T10:56:43.325Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=2684 bytes, uncompressed_size=2684 bytes)
+[debug] [2025-12-11T10:56:43.325Z] [unzip] Processing entry: client\android-chrome-192x192.png
+[debug] [2025-12-11T10:56:43.325Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-12-11T10:56:43.326Z] [unzip] Writing file: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\android-chrome-192x192.png
+[debug] [2025-12-11T10:56:43.328Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=2123 bytes, uncompressed_size=2152 bytes)
+[debug] [2025-12-11T10:56:43.328Z] [unzip] Processing entry: client\apple-touch-icon.png
+[debug] [2025-12-11T10:56:43.328Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-12-11T10:56:43.329Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\apple-touch-icon.png
+[debug] [2025-12-11T10:56:43.329Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=5369 bytes, uncompressed_size=5411 bytes)
+[debug] [2025-12-11T10:56:43.329Z] [unzip] Processing entry: client\android-chrome-512x512.png
+[debug] [2025-12-11T10:56:43.329Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-12-11T10:56:43.330Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\android-chrome-512x512.png
+[debug] [2025-12-11T10:56:43.331Z] [unzip] Entry: client/manifest.json (compressed_size=245 bytes, uncompressed_size=551 bytes)
+[debug] [2025-12-11T10:56:43.331Z] [unzip] Processing entry: client\manifest.json
+[debug] [2025-12-11T10:56:43.331Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-12-11T10:56:43.332Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\manifest.json
+[debug] [2025-12-11T10:56:43.334Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2025-12-11T10:56:43.334Z] [unzip] Processing entry: client\robots.txt
+[debug] [2025-12-11T10:56:43.335Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-12-11T10:56:43.335Z] [unzip] Writing file: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\robots.txt
+[debug] [2025-12-11T10:56:43.337Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=2034 bytes, uncompressed_size=2034 bytes)
+[debug] [2025-12-11T10:56:43.337Z] [unzip] Processing entry: client\mstile-150x150.png
+[debug] [2025-12-11T10:56:43.337Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-12-11T10:56:43.338Z] [unzip] Writing file: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\mstile-150x150.png
+[debug] [2025-12-11T10:56:43.339Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-12-11T10:56:43.339Z] [unzip] Processing entry: client\assets\
+[debug] [2025-12-11T10:56:43.339Z] [unzip] mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\
+[debug] [2025-12-11T10:56:43.340Z] [unzip] Entry: client/assets/index-BX-A56oj.js (compressed_size=582089 bytes, uncompressed_size=2092775 bytes)
+[debug] [2025-12-11T10:56:43.340Z] [unzip] Processing entry: client\assets\index-BX-A56oj.js
+[debug] [2025-12-11T10:56:43.340Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets
+[debug] [2025-12-11T10:56:43.341Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\index-BX-A56oj.js
+[debug] [2025-12-11T10:56:43.354Z] [unzip] Entry: client/assets/index-CjB9C900.css (compressed_size=35979 bytes, uncompressed_size=298654 bytes)
+[debug] [2025-12-11T10:56:43.354Z] [unzip] Processing entry: client\assets\index-CjB9C900.css
+[debug] [2025-12-11T10:56:43.354Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets
+[debug] [2025-12-11T10:56:43.355Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\index-CjB9C900.css
+[debug] [2025-12-11T10:56:43.360Z] [unzip] Entry: client/assets/index-BX-A56oj.js.map (compressed_size=2362482 bytes, uncompressed_size=10036679 bytes)
+[debug] [2025-12-11T10:56:43.360Z] [unzip] Processing entry: client\assets\index-BX-A56oj.js.map
+[debug] [2025-12-11T10:56:43.360Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets
+[debug] [2025-12-11T10:56:43.361Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\index-BX-A56oj.js.map
+[debug] [2025-12-11T10:56:43.495Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-12-11T10:56:43.495Z] [unzip] Processing entry: client\assets\extensions\
+[debug] [2025-12-11T10:56:43.495Z] [unzip] mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\extensions\
+[debug] [2025-12-11T10:56:43.496Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2025-12-11T10:56:43.496Z] [unzip] Processing entry: client\assets\extensions\default-extension.png
+[debug] [2025-12-11T10:56:43.496Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\extensions
+[debug] [2025-12-11T10:56:43.496Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\extensions\default-extension.png
+[debug] [2025-12-11T10:56:43.497Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-12-11T10:56:43.497Z] [unzip] Processing entry: client\assets\img\
+[debug] [2025-12-11T10:56:43.497Z] [unzip] mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\img\
+[debug] [2025-12-11T10:56:43.497Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2025-12-11T10:56:43.497Z] [unzip] Processing entry: client\assets\img\database.png
+[debug] [2025-12-11T10:56:43.497Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\img
+[debug] [2025-12-11T10:56:43.498Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\img\database.png
+[debug] [2025-12-11T10:56:43.499Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-12-11T10:56:43.499Z] [unzip] Processing entry: client\assets\provider-icons\
+[debug] [2025-12-11T10:56:43.499Z] [unzip] mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\
+[debug] [2025-12-11T10:56:43.499Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2025-12-11T10:56:43.499Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_saml.svg
+[debug] [2025-12-11T10:56:43.499Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-12-11T10:56:43.499Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_saml.svg
+[debug] [2025-12-11T10:56:43.500Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2025-12-11T10:56:43.500Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_phone.svg
+[debug] [2025-12-11T10:56:43.500Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-12-11T10:56:43.501Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_phone.svg
+[debug] [2025-12-11T10:56:43.501Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2025-12-11T10:56:43.502Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2025-12-11T10:56:43.502Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-12-11T10:56:43.502Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2025-12-11T10:56:43.550Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2025-12-11T10:56:43.550Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2025-12-11T10:56:43.550Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-12-11T10:56:43.551Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2025-12-11T10:56:43.553Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2025-12-11T10:56:43.553Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_apple.svg
+[debug] [2025-12-11T10:56:43.553Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-12-11T10:56:43.554Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_apple.svg
+[debug] [2025-12-11T10:56:43.557Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2025-12-11T10:56:43.557Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_github.svg
+[debug] [2025-12-11T10:56:43.557Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-12-11T10:56:43.558Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_github.svg
+[debug] [2025-12-11T10:56:43.560Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2025-12-11T10:56:43.560Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2025-12-11T10:56:43.560Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-12-11T10:56:43.561Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2025-12-11T10:56:43.563Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2025-12-11T10:56:43.563Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2025-12-11T10:56:43.563Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-12-11T10:56:43.564Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2025-12-11T10:56:43.566Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2025-12-11T10:56:43.566Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2025-12-11T10:56:43.566Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-12-11T10:56:43.567Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2025-12-11T10:56:43.568Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2025-12-11T10:56:43.568Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2025-12-11T10:56:43.568Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-12-11T10:56:43.569Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2025-12-11T10:56:43.570Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2025-12-11T10:56:43.570Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_email.svg
+[debug] [2025-12-11T10:56:43.570Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-12-11T10:56:43.571Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_email.svg
+[debug] [2025-12-11T10:56:43.572Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2025-12-11T10:56:43.573Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_google.svg
+[debug] [2025-12-11T10:56:43.573Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-12-11T10:56:43.573Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_google.svg
+[debug] [2025-12-11T10:56:43.575Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2025-12-11T10:56:43.575Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2025-12-11T10:56:43.575Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-12-11T10:56:43.576Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2025-12-11T10:56:43.577Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2025-12-11T10:56:43.577Z] [unzip] Processing entry: client\browserconfig.xml
+[debug] [2025-12-11T10:56:43.577Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-12-11T10:56:43.578Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\browserconfig.xml
+[debug] [2025-12-11T10:56:43.580Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=475 bytes, uncompressed_size=475 bytes)
+[debug] [2025-12-11T10:56:43.581Z] [unzip] Processing entry: client\favicon-32x32.png
+[debug] [2025-12-11T10:56:43.581Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-12-11T10:56:43.581Z] [unzip] Writing file: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\client\favicon-32x32.png
+[debug] [2025-12-11T10:56:43.582Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-12-11T10:56:43.582Z] [unzip] Processing entry: server\
+[debug] [2025-12-11T10:56:43.582Z] [unzip] mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\server\
+[debug] [2025-12-11T10:56:43.582Z] [unzip] Entry: server/server.mjs.map (compressed_size=217845 bytes, uncompressed_size=944978 bytes)
+[debug] [2025-12-11T10:56:43.582Z] [unzip] Processing entry: server\server.mjs.map
+[debug] [2025-12-11T10:56:43.582Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\server
+[debug] [2025-12-11T10:56:43.583Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\server\server.mjs.map
+[debug] [2025-12-11T10:56:43.592Z] [unzip] Entry: server/server.mjs (compressed_size=276407 bytes, uncompressed_size=933701 bytes)
+[debug] [2025-12-11T10:56:43.592Z] [unzip] Processing entry: server\server.mjs
+[debug] [2025-12-11T10:56:43.592Z] [unzip] else mkdir: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\server
+[debug] [2025-12-11T10:56:43.593Z] [unzip] deflating: C:\Users\OS\.cache\firebase\emulators\ui-v1.15.0\server\server.mjs
+[info] i  functions: Watching "D:\React Project\build-webapp-firebase-nextjs\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\React Project\\build-webapp-firebase-nextjs\\functions\" for Cloud Functions..."}}
+[debug] [2025-12-11T10:56:43.609Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2025-12-11T10:56:44.344Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^5.0.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "typescript": "^5.4.0",
+    "firebase-functions-test": "^3.2.0"
+  },
+  "private": true
+}
+[debug] [2025-12-11T10:56:44.345Z] Building nodejs source
+[debug] [2025-12-11T10:56:44.345Z] Failed to find version of module node: reached end of search path D:\React Project\build-webapp-firebase-nextjs\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "22". Using node@22 from host. 
+[debug] [2025-12-11T10:56:44.347Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-12-11T10:56:44.353Z] Found firebase-functions binary at 'D:\React Project\build-webapp-firebase-nextjs\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8953
+
+[debug] [2025-12-11T10:56:44.745Z] Got response from /__/functions.yaml {"endpoints":{"users":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-southeast1"],"labels":{},"httpsTrigger":{},"entryPoint":"users"},"blogs":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-southeast1"],"labels":{},"httpsTrigger":{},"entryPoint":"blogs"},"health":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-southeast1"],"labels":{},"httpsTrigger":{},"entryPoint":"health"},"stripeWebhook":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-southeast1"],"labels":{},"httpsTrigger":{},"entryPoint":"stripeWebhook"},"githubWebhook":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-southeast1"],"labels":{},"httpsTrigger":{},"entryPoint":"githubWebhook"},"genericWebhook":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-southeast1"],"labels":{},"httpsTrigger":{},"entryPoint":"genericWebhook"},"dailyCleanup":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-southeast1"],"labels":{},"scheduleTrigger":{"schedule":"0 19 * * *","retryConfig":{},"timeZone":"Asia/Ho_Chi_Minh"},"entryPoint":"dailyCleanup"},"hourlyStats":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-southeast1"],"labels":{},"scheduleTrigger":{"schedule":"0 * * * *","retryConfig":{},"timeZone":"Asia/Ho_Chi_Minh"},"entryPoint":"hourlyStats"},"weeklyReport":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-southeast1"],"labels":{},"scheduleTrigger":{"schedule":"0 1 * * 0","retryConfig":{},"timeZone":"Asia/Ho_Chi_Minh"},"entryPoint":"weeklyReport"},"healthMonitor":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-southeast1"],"labels":{},"scheduleTrigger":{"schedule":"*/5 * * * *","retryConfig":{},"timeZone":"Asia/Ho_Chi_Minh"},"entryPoint":"healthMonitor"},"onUserCreated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-southeast1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"users/{userId}"},"retry":false},"entryPoint":"onUserCreated"},"onBlogCreated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-southeast1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"blogs/{blogId}"},"retry":false},"entryPoint":"onBlogCreated"},"onBlogUpdated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-southeast1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.updated","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"blogs/{blogId}"},"retry":false},"entryPoint":"onBlogUpdated"},"onBlogDeleted":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-southeast1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.deleted","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"blogs/{blogId}"},"retry":false},"entryPoint":"onBlogDeleted"},"onChatMessage":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-southeast1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"chats/{chatId}/messages/{messageId}"},"retry":false},"entryPoint":"onChatMessage"}},"specVersion":"v1alpha1","requiredAPIs":[{"api":"cloudscheduler.googleapis.com","reason":"Needed for scheduled functions."}],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: users, blogs, health, stripeWebhook, githubWebhook, genericWebhook, dailyCleanup, hourlyStats, weeklyReport, healthMonitor, onUserCreated, onBlogCreated, onBlogUpdated, onBlogDeleted, onChatMessage. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: users, blogs, health, stripeWebhook, githubWebhook, genericWebhook, dailyCleanup, hourlyStats, weeklyReport, healthMonitor, onUserCreated, onBlogCreated, onBlogUpdated, onBlogDeleted, onChatMessage."}}
+[info] +  functions[asia-southeast1-users]: http function initialized (http://127.0.0.1:5001/fir-app-1-b679f/asia-southeast1/users). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/fir-app-1-b679f/asia-southeast1/users)."}}
+[info] +  functions[asia-southeast1-blogs]: http function initialized (http://127.0.0.1:5001/fir-app-1-b679f/asia-southeast1/blogs). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/fir-app-1-b679f/asia-southeast1/blogs)."}}
+[info] +  functions[asia-southeast1-health]: http function initialized (http://127.0.0.1:5001/fir-app-1-b679f/asia-southeast1/health). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/fir-app-1-b679f/asia-southeast1/health)."}}
+[info] +  functions[asia-southeast1-stripeWebhook]: http function initialized (http://127.0.0.1:5001/fir-app-1-b679f/asia-southeast1/stripeWebhook). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/fir-app-1-b679f/asia-southeast1/stripeWebhook)."}}
+[info] +  functions[asia-southeast1-githubWebhook]: http function initialized (http://127.0.0.1:5001/fir-app-1-b679f/asia-southeast1/githubWebhook). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/fir-app-1-b679f/asia-southeast1/githubWebhook)."}}
+[info] +  functions[asia-southeast1-genericWebhook]: http function initialized (http://127.0.0.1:5001/fir-app-1-b679f/asia-southeast1/genericWebhook). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/fir-app-1-b679f/asia-southeast1/genericWebhook)."}}
+[info] i  functions[asia-southeast1-dailyCleanup]: function ignored because the pubsub emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the pubsub emulator does not exist or is not running."}}
+[info] i  functions[asia-southeast1-hourlyStats]: function ignored because the pubsub emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the pubsub emulator does not exist or is not running."}}
+[info] i  functions[asia-southeast1-weeklyReport]: function ignored because the pubsub emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the pubsub emulator does not exist or is not running."}}
+[info] i  functions[asia-southeast1-healthMonitor]: function ignored because the pubsub emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the pubsub emulator does not exist or is not running."}}
+[info] i  functions[asia-southeast1-onUserCreated]: function ignored because the firestore emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the firestore emulator does not exist or is not running."}}
+[info] i  functions[asia-southeast1-onBlogCreated]: function ignored because the firestore emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the firestore emulator does not exist or is not running."}}
+[info] i  functions[asia-southeast1-onBlogUpdated]: function ignored because the firestore emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the firestore emulator does not exist or is not running."}}
+[info] i  functions[asia-southeast1-onBlogDeleted]: function ignored because the firestore emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the firestore emulator does not exist or is not running."}}
+[info] i  functions[asia-southeast1-onChatMessage]: function ignored because the firestore emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the firestore emulator does not exist or is not running."}}
+[debug] [2025-12-11T10:56:48.809Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
