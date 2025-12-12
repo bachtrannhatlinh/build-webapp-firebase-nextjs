@@ -3,57 +3,67 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
     
+    // Helper function to check App Check token
+    function hasValidAppCheck() {
+      return request.appCheckToken != null;
+    }
+    
     // Users collection - cho phép read không cần auth để tránh lỗi permission
     match /users/{userId} {
       allow read: if true;
-      allow create: if request.auth != null;
-      allow update, delete: if request.auth != null && request.auth.uid == userId;
+      allow create: if request.auth != null && hasValidAppCheck();
+      allow update, delete: if request.auth != null && request.auth.uid == userId && hasValidAppCheck();
     }
     
     // Profiles collection
     match /profiles/{userId} {
       allow read: if true;
-      allow write: if request.auth != null && request.auth.uid == userId;
+      allow write: if request.auth != null && request.auth.uid == userId && hasValidAppCheck();
     }
     
     // Blogs collection
     match /blogs/{blogId} {
       allow read: if true;
-      allow create: if request.auth != null;
+      allow create: if request.auth != null && hasValidAppCheck();
       allow update, delete: if request.auth != null && 
-        request.auth.uid == resource.data.authorId;
+        request.auth.uid == resource.data.authorId && hasValidAppCheck();
     }
     
     // Chat rooms
     match /chatRooms/{chatId} {
-      allow read, write: if true;
+      allow read: if true;
+      allow write: if hasValidAppCheck();
     }
     
     // Messages
     match /messages/{messageId} {
-      allow read, write: if true;
+      allow read: if true;
+      allow write: if hasValidAppCheck();
     }
     
     // Notifications
     match /notifications/{notificationId} {
-      allow read, write: if true;
+      allow read: if true;
+      allow write: if hasValidAppCheck();
     }
     
     // Chats collection
     match /chats/{chatId} {
-      allow read, write: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && hasValidAppCheck();
       
       match /messages/{messageId} {
-        allow read, write: if request.auth != null;
+        allow read: if request.auth != null;
+        allow write: if request.auth != null && hasValidAppCheck();
       }
     }
     
     // Comments collection
     match /comments/{commentId} {
       allow read: if true;
-      allow create: if request.auth != null;
+      allow create: if request.auth != null && hasValidAppCheck();
       allow update, delete: if request.auth != null && 
-        request.auth.uid == resource.data.authorId;
+        request.auth.uid == resource.data.authorId && hasValidAppCheck();
     }
     
     // Stats & Reports (read-only for authenticated users)
@@ -91,8 +101,10 @@ service cloud.firestore {
     
     // Sessions
     match /sessions/{sessionId} {
-      allow read, write: if request.auth != null && 
+      allow read: if request.auth != null && 
         request.auth.uid == resource.data.userId;
+      allow write: if request.auth != null && 
+        request.auth.uid == resource.data.userId && hasValidAppCheck();
     }
     
     // Payments
